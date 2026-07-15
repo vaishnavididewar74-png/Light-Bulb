@@ -1,0 +1,72 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>
+			light-bulb Webpage
+		</title>
+		<meta charset="UTF-8"/>
+		<meta name="Description" content="This is a single web page"/>
+		<meta name="Author" content="Vaishnavi Didewar"/>
+		<meta name="Keywords" content="HTML, CSS"/>
+		<meta http-equiv="refresh" content=""/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<style>
+			body{
+				position:relative;
+				width:100%;
+				margin:0%;
+			}
+			img{
+				height:8cm;
+				border-radius:15px;
+				border:10px double black;
+			}
+			#img{
+				position:absolute;
+				width:100%;
+				text-align:center;
+				margin-top:5%;
+			}
+			#button{
+				position:absolute;
+				width:30%;
+				left:35%;
+				right:35%;
+				text-align:center;
+				margin-top:37%;
+				display:flex;
+				justify-content:space-evenly;
+			}
+			#button button{
+				background-color:white;
+				padding:0.2cm 0.3cm 0.2cm 0.3cm;
+				border:2px solid black;
+				font-weight:bold;
+				border-radius:0px 5px 0px 5px;
+			}
+			#button button:hover{
+				transition:background-color 1s linear;
+				background-color:black;
+				color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div id="img">
+				<img src="Image/OFF.png" id="bulb"/>
+			</div>
+			<div id="button">
+				<button onclick="document.getElementById('bulb').src='Image/ON.png'">Turn ON the light</button>
+				<button onclick="document.getElementById('bulb').src='Image/OFF.png'">Turn OFF the light</button>
+			</div>
+		</section>
+	
+		
+	</body>
+</html>
+
+	
+		
+		
+		
